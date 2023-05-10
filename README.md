@@ -56,6 +56,7 @@ This code was tested on Arch Linux with the Gnome desktop environment.
 
 ## Screenshots
 The wallpaper shown in the screenshots is included in the following repository: https://gist.github.com/85942af486eb79118467.git
+
 ![Regulus-Spotify Screenshot 1](/screenshots/screenshot1.png)
 
 ![Regulus-Spotify Screenshot 2](/screenshots/screenshot2.png)
