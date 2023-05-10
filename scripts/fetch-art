@@ -1,0 +1,76 @@
+#!/bin/bash
+
+base_path="$(dirname "$(realpath "$0")")"
+source "$base_path/load-config"
+
+source="$1"
+
+if [ -z "$source" ]; then
+    echo "No source specified!"
+    exit 1
+fi
+
+data_dir="$base_path/../data"
+data_file="$data_dir/$source-art"
+data_img="$data_dir/$source.png"
+
+if [ "$source" = spotify ]; then
+    if ! command -v playerctl >/dev/null; then
+        echo "Missing playerctl!"
+        exit 1
+    fi
+
+    url="$(playerctl -p spotify metadata mpris:artUrl | sed 's;https://open.spotify.com;http://i.scdn.co;g')"
+
+elif [ "$source" = spotifyd ]; then
+    if ! command -v playerctl >/dev/null; then
+        echo "Missing playerctl!"
+        exit 1
+    fi
+
+    url="$(playerctl -p spotifyd metadata mpris:artUrl)"
+elif [ "$source" = vlc ]; then
+    if ! command -v playerctl >/dev/null; then
+        echo "Missing playerctl!"
+        exit 1
+    fi
+
+    url="$(playerctl -p vlc metadata mpris:artUrl)"
+elif [ "$source" = Lollypop ]; then
+    if ! command -v playerctl >/dev/null; then
+        echo "Missing playerctl!"
+        exit 1
+    fi
+
+    url="$(playerctl -p Lollypop metadata mpris:artUrl)"
+elif [ "$source" = cmus ]; then
+    if ! command -v cmus-remote >/dev/null; then
+        echo "Missing cmus-remote!"
+        exit 1
+    fi
+
+    url="$(cmus-remote -Q 2>/dev/null | grep 'file' | cut -d " " -f 2-)"
+else
+    echo "Unknown source: '$source'"
+    exit 1
+fi
+
+if [ ! -d "$data_dir" ]; then
+    mkdir "$data_dir"
+fi
+
+touch "$data_file"
+
+content="$(cat "$data_file")"
+# append tint so config changes update
+expected_content="$url $NOW_CLOCKING_ARTWORK_TINT"
+
+if [ -n "$url" ] && [ "$content" != "$expected_content" ]; then
+    echo "$expected_content" > "$data_file"
+    curl -s "$url" > "$data_img"
+
+    if [ ! -z "$NOW_CLOCKING_ARTWORK_TINT" ] && command -v convert >/dev/null; then
+        # convert in-place
+        convert "$data_img" -colorspace gray -fill "$NOW_CLOCKING_ARTWORK_TINT" -tint 100 "$data_img"
+    fi
+fi
