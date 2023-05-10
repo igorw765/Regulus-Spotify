@@ -48,8 +48,10 @@ To install the theme, follow the steps below:
    ```
    bash /path/to/Regulus-Spotify/start.sh
    ```
-
 The `start.sh` script will set the necessary permissions and start the conky command to display the theme.
+   
+10. Automatically start Conky during system startup on GNOME by using the `conky.desktop` file. Note that certain adjustments may be necessary.
+
 
 ## Tested Environment
 This code was tested on Arch Linux with the Gnome desktop environment.
