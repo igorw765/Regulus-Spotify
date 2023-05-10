@@ -24,7 +24,7 @@ To install the theme, follow the steps below:
 
 1. Clone the repository
    ```
-   git clone https://github.com/<your-github-username>/Regulus-Spotify.git
+   git clone https://github.com/igorw765/Regulus-Spotify.git
    ```
 
 2. Install the required dependencies:
@@ -55,6 +55,7 @@ The `start.sh` script will set the necessary permissions and start the conky com
 This code was tested on Arch Linux with the Gnome desktop environment.
 
 ## Screenshots
+The wallpaper shown in the screenshots is included in the following repository: https://gist.github.com/85942af486eb79118467.git
 ![Regulus-Spotify Screenshot 1](/screenshots/screenshot1.png)
 
 ![Regulus-Spotify Screenshot 2](/screenshots/screenshot2.png)
@@ -63,3 +64,11 @@ This code was tested on Arch Linux with the Gnome desktop environment.
 
 ## License
 This project is licensed under the GPL-3.0 License. See the LICENSE file for details.
+
+Sure, here's an example of how you could add a "buy me a coffee" section to your README with a link to your PayPal account:
+
+## Buy me a coffee ☕️
+
+If you like this project and find it useful, you can show your appreciation by buying me a coffee! Your support helps me continue developing and improving the theme.
+
+[PayPal](https://www.paypal.me/IgorWroblewski05)
