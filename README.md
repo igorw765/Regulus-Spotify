@@ -66,8 +66,6 @@ The wallpaper shown in the screenshots is included in the following repository: 
 ## License
 This project is licensed under the GPL-3.0 License. See the LICENSE file for details.
 
-Sure, here's an example of how you could add a "buy me a coffee" section to your README with a link to your PayPal account:
-
 ## Buy me a coffee ☕️
 
 If you like this project and find it useful, you can show your appreciation by buying me a coffee! Your support helps me continue developing and improving the theme.
