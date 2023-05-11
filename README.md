@@ -22,7 +22,7 @@ Regulus-Spotify is a conky theme available for all Linux systems. This theme is 
 
 ## Installation
 
-To install the theme, follow the steps below:
+# You can either follow the steps provided below to install the theme, or make use of the installation script that is available in the releases tab.
 
 1. Clone the repository
    ```
@@ -34,27 +34,25 @@ To install the theme, follow the steps below:
    sudo apt-get install conky cairo lua5.3 ffmpeg playerctl sed git
    ```
    
-3. Using the installation script available in the releases tab is recommended but you can also install theme manually.
+3. Download all the fonts from the font folder.
 
-4. Download all the fonts from the font folder.
+4. If your monitor resolution is not 1080x1920p, you may need to modify the code manually. To change the position of elements, play with the `offset`, `voffset`, and `alignr` values.
 
-5. If your monitor resolution is not 1080x1920p, you may need to modify the code manually. To change the position of elements, play with the `offset`, `voffset`, and `alignr` values.
+5. To modify the color of the text, change this line in the `Regulus.conf` file: `color3 = 'ED8207',` to the corresponding hex code.
 
-6. To modify the color of the text, change this line in the `Regulus.conf` file: `color3 = 'ED8207',` to the corresponding hex code.
+6. To change the rings color, modify the values of `bg_colour` and `fg_colour` in the `rings.lua` file located in the `scripts` folder.
 
-7. To change the rings color, modify the values of `bg_colour` and `fg_colour` in the `rings.lua` file located in the `scripts` folder.
+7. To display network speeds properly, you need to modify the `downspeedgraph` and `upspeedgraph` lines in the `Regulus.conf` file to match the name of the network adapter used by your system. You can use the `ip a` command to check the name of your network adapter.
 
-8. To display network speeds properly, you need to modify the `downspeedgraph` and `upspeedgraph` lines in the `Regulus.conf` file to match the name of the network adapter used by your system. You can use the `ip a` command to check the name of your network adapter.
+8. Assign your current city's `city_id` to the `city_id=` line inside the `weather.sh` file located in the `scripts` folder. You can find your city's ID on the [OpenWeatherMap website](https://openweathermap.org/).
 
-9. Assign your current city's `city_id` to the `city_id=` line inside the `weather.sh` file located in the `scripts` folder. You can find your city's ID on the [OpenWeatherMap website](https://openweathermap.org/).
-
-10. Start the theme by running the `start.sh` script:
+9. Start the theme by running the `start.sh` script:
    ```
    bash /path/to/Regulus-Spotify/start.sh
    ```
 The `start.sh` script will set the necessary permissions and start the conky command to display the theme.
    
-11. Automatically start Conky during system startup on GNOME by using the `conky.desktop` file. Note that certain adjustments may be necessary.
+10. Automatically start Conky during system startup on GNOME by using the `conky.desktop` file. Note that certain adjustments may be necessary.
 
 
 ## Tested Environment
