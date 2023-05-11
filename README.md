@@ -22,7 +22,7 @@ Regulus-Spotify is a conky theme available for all Linux systems. This theme is 
 
 ## Installation
 
-  **You can either follow the steps provided below to install the theme, or make use of the installation script that is available in the releases tab.**
+  **You can either follow the steps provided below to install the theme, or make use of the installation script that is available in the releases tab. Regardless of the method you choose, it is necessary to install all dependencies.**
 
 1. Clone the repository
    ```
