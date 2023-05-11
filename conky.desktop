@@ -1,6 +1,6 @@
 [Desktop Entry]
 Type=Application
 Name=conky
-Exec=/home/$USER/.config/conky/Regulus/start.sh
+Exec=/home/USER/.config/conky/Regulus-Spotify/start.sh
 StartupNotify=false
 Terminal=false
