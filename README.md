@@ -22,7 +22,7 @@ Regulus-Spotify is a conky theme available for all Linux systems. This theme is 
 
 ## Installation
 
-  **You can either follow the steps provided below to install the theme, or make use of the installation script that is available in the releases tab. Regardless of the method you choose, it is necessary to install all dependencies.**
+  **You can either follow the steps provided below to install the theme, or make use of the installation script that is available in the releases tab. You can also change appearience of theme executing `initial-setup.sh` script. Regardless of the method you choose, it is necessary to install all dependencies.**
 
 1. Clone the repository
    ```
@@ -38,13 +38,13 @@ Regulus-Spotify is a conky theme available for all Linux systems. This theme is 
 
 4. If your monitor resolution is not 1080x1920p, you may need to modify the code manually. To change the position of elements, play with the `offset`, `voffset`, and `alignr` values.
 
-5. To modify the color of the text, change this line in the `Regulus.conf` file: `color3 = 'ED8207',` to the corresponding hex code.
+5. To modify the color of the text, execute `color.sh` script located in `scripts` folder.
 
-6. To change the rings color, modify the values of `bg_colour` and `fg_colour` in the `rings.lua` file located in the `scripts` folder.
+6. To change the rings color, execute `rings.sh` script located in `scripts` folder.
 
-7. To display network speeds properly, you need to modify the `downspeedgraph` and `upspeedgraph` lines in the `Regulus.conf` file to match the name of the network adapter used by your system. You can use the `ip a` command to check the name of your network adapter.
+7. To display network speeds properly, execute `network.sh` script located in `scripts` folder
 
-8. Assign your current city's `city_id` to the `city_id=` line inside the `weather.sh` file located in the `scripts` folder. You can find your city's ID on the [OpenWeatherMap website](https://openweathermap.org/).
+8. Assign your current city's `city_id` to the `city_id=` line inside the `weather.sh` file located in the `scripts` folder. You can find your city's ID on the [OpenWeatherMap website](https://openweathermap.org/). You can also execute `localization.sh` script located in `scripts` folder
 
 9. Start the theme by running the `start.sh` script:
    ```
