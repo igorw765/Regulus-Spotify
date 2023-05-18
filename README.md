@@ -42,7 +42,7 @@ Regulus-Spotify is a conky theme available for all Linux systems. This theme is 
 
 6. To change the rings color, execute `rings.sh` script located in `scripts` folder.
 
-7. To display network speeds properly, execute `network.sh` script located in `scripts` folder
+7. To display network speeds properly, execute `network.sh` script located in `scripts` folder (You still need to manually change color of the graphs).
 
 8. Assign your current city's `city_id` to the `city_id=` line inside the `weather.sh` file located in the `scripts` folder. You can find your city's ID on the [OpenWeatherMap website](https://openweathermap.org/). You can also execute `localization.sh` script located in `scripts` folder
 
