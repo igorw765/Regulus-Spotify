@@ -74,4 +74,4 @@ This project is licensed under the GPL-3.0 License. See the LICENSE file for det
 
 If you like this project and find it useful, you can show your appreciation by buying me a coffee! Your support helps me continue developing and improving the theme.
 
-[PayPal](https://www.paypal.me/IgorWroblewski05)
+[PayPal](https://www.paypal.me/kijimoshi05)
