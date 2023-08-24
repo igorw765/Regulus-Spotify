@@ -17,6 +17,7 @@ Regulus-Spotify is a conky theme available for all Linux systems. This theme is 
 - Lua
 - Ffmpeg
 - Playerctl
+- Jq
 - Sed
 - Git
 
@@ -31,7 +32,7 @@ Regulus-Spotify is a conky theme available for all Linux systems. This theme is 
 
 2. Install the required dependencies:
    ```
-   sudo apt-get install conky cairo lua5.3 ffmpeg playerctl sed git
+   sudo apt-get install conky jq cairo lua5.3 ffmpeg playerctl sed git
    ```
    
 3. Download all the fonts from the font folder.
